@@ -23,6 +23,6 @@ class RoleSeeder extends Seeder
        $role6 = Role::create(['name' => 'Contabilidad']);
 
        
-       Permission::create(['name']);
+       Permission::create(['name' => 'Ver Dashboard']);
     }
 }
