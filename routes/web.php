@@ -22,6 +22,18 @@ Route::middleware('auth')->group(function () {
         return view('chirps.index');
     })->name('chirps.index');
 
+    Route::post('/chirps',function(){
+        $message = request('message');
+
+        //Insert in the DB
+    });
+    
+    Route::get('/about', function () {
+        return view('about.index');
+    })->name('about.index');
+
+    
+
 });
 
 require __DIR__.'/auth.php';

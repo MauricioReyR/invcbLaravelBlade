@@ -20,6 +20,9 @@
                         <x-nav-link :href="route('chirps.index')" :active="request()->routeIs('chirps.index')">
                             {{ __('Chirps') }}
                         </x-nav-link>
+                        <x-nav-link :href="route('about.index')" :active="request()->routeIs('about.index')">
+                            {{ __('About') }}
+                        </x-nav-link>
                     </x-nav-link>
                 </div>
             </div>
@@ -81,6 +84,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('chirps.index')" :active="request()->routeIs('chirps.index')">
                 {{ __('Chirps') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('about.index')" :active="request()->routeIs('about.index')">
+                {{ __('About') }}
             </x-responsive-nav-link>
         </div>
 
